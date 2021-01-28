@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="myNav">
+	<nav class="navbar navbar1 navbar-expand">
+	  <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"></a>
+	  <ul class="navbar-nav ml-auto">
+      	<li class="nav-item">
+        	<a class="nav-link1" href="#">Registruj se</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link2" href="#">Prijavi se</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link3" href="#"><img src="images/ic_search.svg" alt="search"></a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link3" href="#"><img src="images/ic_heart_outline.svg" alt="heart"></a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link3" href="#"><img src="images/ic_shopping_cart.svg" alt="shopping_chart"></a>
+      	</li>
+      </ul>
+	</nav>
+	<div class="navbar2">
+		<nav class="navbar navbar2width navbar-expand-sm">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Novo</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Šminka</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Parfemi</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Nega tela</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Nega lica</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Muškarci</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Deca</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</div>
+</div>
+<div class="pageLinks">
+	<ul class="navbar-nav navbar-expand mr-auto">
+      <li class="">
+        <a class="" href="#">Početna</a>
+      </li>
+      <li class="crta">
+      	<span></span>
+      </li>
+      <li class="">
+        <a class="" href="#">Parfemi</a>
+      </li>
+      <li class="crta">
+      	<span></span>
+      </li>
+      <li class="">
+        <a class="" href="#">Parfemski setovi</a>
+      </li>
+      <li class="crta">
+      	<span></span>
+      </li>
+      <li class="">
+        <a class="active" href="#">Ženski parfemski setovi</a>
+      </li>
+    </ul>
+</div>
+<div class="backgroundPic">
+	<img src="images/Mask.png" alt="mask">
+	<div class="maskText">
+		<h1>Ženski parfemski setovi</h1>
+		<p>Pogledaj novu kolekciju ženskih parfemskih setova.<br>Svetski poznati brendovi, samo ko nas</p>
+	</div>
+</div>
+
+<div class="sortBy">
+	<div class="row nopadding">
+		<div class="col-6 noOfProd nopadding">
+			<p>Prikazano 1-18 od 140 proizvoda</p>
+		</div>
+		<div class="col-6 sort nopadding">
+			<div class="dropdown float-right">
+			  <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <div><div class="dropdownArrow float-right"></div><p class="float-right">Najnovije</p></div>
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item" href="#">Najnovije</a>
+			    <a class="dropdown-item" href="#">Cena rastuće</a>
+			    <a class="dropdown-item" href="#">Cena opadajuće</a>
+			    <a class="dropdown-item" href="#">Naziv proizvoda</a>
+			  </div>
+			</div>
+			<p class="float-right sortirajPo">Sortiraj po</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid myContainer">
+	<div class="row myRow nopadding">
+		<div class="col-12 col-sm-3 paddingright30">
+			<div class="filter">
+				<div class="filterdiv">
+					<div class="filtercena">
+						<div class="cenaNaslov">
+							<h4>Filtriraj po ceni</h4>
+							<div class="hideMenu" onclick="myFunction()"></div>
+						</div>
+						<div class="middle" id="priceRange">
+							<div class="multi-range-slider">
+								<input type="range" id="input-left" min="0" max="100" value="25">
+								<input type="range" id="input-right" min="0" max="100" value="75">
+								<div class="slider">
+									<div class="track"></div>
+									<div class="range"></div>
+									<div class="thumb left"></div>
+									<div class="thumb right"></div>
+								</div>
+							</div>
+							<p class="priceRange">Cena: $25-$220</p>
+						</div>
+					</div>
+					<div class="filterbrend">
+						<div class="brendNaslov">
+							<h4>Filteriraj po brendu</h4>
+							<div class="hideMenu" onclick="myFunction()"></div>
+						</div>
+						<div class="myScrollbar" id="myScrollbar">
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="armani" hidden name="">
+							  	<label for="armani" class="checkmark"></label>
+							  	<p>Armani (11)</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="blumarine" hidden name="">
+							  	<label for="blumarine" class="checkmark"></label>
+							  	<p>Blumarine (7)</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="bottega" hidden name="">
+							  	<label for="bottega" class="checkmark"></label>
+							  	<p>Bottega Veneta (2)</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="boucheron" hidden name="">
+							  	<label for="boucheron" class="checkmark"></label>
+							  	<p>Boucheron (4)</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="bruno" hidden name="">
+							  	<label for="bruno" class="checkmark"></label>
+							  	<p>Bruno Banani (1)</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="burberry" hidden name="">
+							  	<label for="burberry" class="checkmark"></label>
+							  	<p>Burberry (12)</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="bvlgari" hidden name="">
+							  	<label for="bvlgari" class="checkmark"></label>
+							  	<p>Bvlgari (9)</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="check1" hidden name="">
+							  	<label for="check1" class="checkmark"></label>
+							  	<p>Default checkbox</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="check2" hidden name="">
+							  	<label for="check2" class="checkmark"></label>
+							  	<p>Default checkbox</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="check3" hidden name="">
+							  	<label for="check3" class="checkmark"></label>
+							  	<p>Default checkbox</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="check4" hidden name="">
+							  	<label for="check4" class="checkmark"></label>
+							  	<p>Default checkbox</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="check5" hidden name="">
+							  	<label for="check5" class="checkmark"></label>
+							  	<p>Default checkbox</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="check6" hidden name="">
+							  	<label for="check6" class="checkmark"></label>
+							  	<p>Default checkbox</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="check7" hidden name="">
+							  	<label for="check7" class="checkmark"></label>
+							  	<p>Default checkbox</p>
+							</div>
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="check8" hidden name="">
+							  	<label for="check8" class="checkmark"></label>
+							  	<p>Default checkbox</p>
+							</div>
+						</div>
+					</div>
+					<div class="filterzapremina">
+						<div class="zapreminaNaslov">
+							<h4>Filteriraj po zapremini</h4>
+							<div class="hideMenu" onclick="myFunction()"></div>
+						</div>
+						<div id="zapremina">
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="z1" hidden name="">
+							  	<label for="z1" class="checkmark"></label>
+							  	<p>0 ml - 50 ml (11)</p>
+							</div><div class="checkbox-wrapper">
+								<input type="checkbox" id="z2" hidden name="">
+							  	<label for="z2" class="checkmark"></label>
+							  	<p>50 ml - 100 ml (22)</p>
+							</div><div class="checkbox-wrapper">
+								<input type="checkbox" id="z3" hidden name="">
+							  	<label for="z3" class="checkmark"></label>
+							  	<p>100 ml - 150 ml (35)</p>
+							</div><div class="checkbox-wrapper">
+								<input type="checkbox" id="z4" hidden name="">
+							  	<label for="z4" class="checkmark"></label>
+							  	<p>150 ml - 200 ml (7)</p>
+							</div><div class="checkbox-wrapper">
+								<input type="checkbox" id="z5" hidden name="">
+							  	<label for="z5" class="checkmark"></label>
+							  	<p>200 ml - 250 ml (41)</p>
+							</div><div class="checkbox-wrapper">
+								<input type="checkbox" id="z6" hidden name="">
+							  	<label for="z6" class="checkmark"></label>
+							  	<p>250 ml - 300 ml (16)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-9 myCol nopadding">
+			<div class="row megaRow">
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+					<div class="opis opis1">
+						<div class="picture">
+							<img src="images/oleo_gel_nail.png" class="img-fluid" alt="oleo_gel_nail">
+							<div class="sale displayNone"><p>25%</p></div>
+							<div class="novo displayNone"><p>Novo</p></div>
+						</div>
+						<div class="opisprod">
+							<p>Dolce & Gabbana</p>
+							<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+							<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+							<div class="like"></div>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis2">
+							<div class="picture">
+								<img src="images/calvinklein.png" class="img-fluid" alt="calvinklein">
+								<div class="sale"><p>25%</p></div>
+								<div class="novo displayNone"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis3">
+							<div class="picture">
+								<img src="images/etm_air.png" class="img-fluid" alt="etm_air">
+								<div class="sale1"><p>45%</p></div>
+								<div class="novo"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$49.99</h2><div class="saleprice"><p>$99.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+					<div class="opis opis1">
+						<div class="picture">
+							<img src="images/oleo_gel_nail.png" class="img-fluid" alt="oleo_gel_nail">
+							<div class="sale displayNone"><p>25%</p></div>
+							<div class="novo displayNone"><p>Novo</p></div>
+						</div>
+						<div class="opisprod">
+							<p>Dolce & Gabbana</p>
+							<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+							<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+							<div class="like"></div>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis2">
+							<div class="picture">
+								<img src="images/calvinklein.png" class="img-fluid" alt="calvinklein">
+								<div class="sale"><p>25%</p></div>
+								<div class="novo displayNone"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis3">
+							<div class="picture">
+								<img src="images/etm_air.png" class="img-fluid" alt="etm_air">
+								<div class="sale1"><p>45%</p></div>
+								<div class="novo"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$49.99</h2><div class="saleprice"><p>$99.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div><div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+					<div class="opis opis1">
+						<div class="picture">
+							<img src="images/oleo_gel_nail.png" class="img-fluid" alt="oleo_gel_nail">
+							<div class="sale displayNone"><p>25%</p></div>
+							<div class="novo displayNone"><p>Novo</p></div>
+						</div>
+						<div class="opisprod">
+							<p>Dolce & Gabbana</p>
+							<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+							<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+							<div class="like"></div>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis2">
+							<div class="picture">
+								<img src="images/calvinklein.png" class="img-fluid" alt="calvinklein">
+								<div class="sale"><p>25%</p></div>
+								<div class="novo displayNone"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis3">
+							<div class="picture">
+								<img src="images/etm_air.png" class="img-fluid" alt="etm_air">
+								<div class="sale1"><p>45%</p></div>
+								<div class="novo"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$49.99</h2><div class="saleprice"><p>$99.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div><div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+					<div class="opis opis1">
+						<div class="picture">
+							<img src="images/oleo_gel_nail.png" class="img-fluid" alt="oleo_gel_nail">
+							<div class="sale displayNone"><p>25%</p></div>
+							<div class="novo displayNone"><p>Novo</p></div>
+						</div>
+						<div class="opisprod">
+							<p>Dolce & Gabbana</p>
+							<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+							<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+							<div class="like"></div>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis2">
+							<div class="picture">
+								<img src="images/calvinklein.png" class="img-fluid" alt="calvinklein">
+								<div class="sale"><p>25%</p></div>
+								<div class="novo displayNone"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis3">
+							<div class="picture">
+								<img src="images/etm_air.png" class="img-fluid" alt="etm_air">
+								<div class="sale1"><p>45%</p></div>
+								<div class="novo"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$49.99</h2><div class="saleprice"><p>$99.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div><div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+					<div class="opis opis1">
+						<div class="picture">
+							<img src="images/oleo_gel_nail.png" class="img-fluid" alt="oleo_gel_nail">
+							<div class="sale displayNone"><p>25%</p></div>
+							<div class="novo displayNone"><p>Novo</p></div>
+						</div>
+						<div class="opisprod">
+							<p>Dolce & Gabbana</p>
+							<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+							<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+							<div class="like"></div>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis2">
+							<div class="picture">
+								<img src="images/calvinklein.png" class="img-fluid" alt="calvinklein">
+								<div class="sale"><p>25%</p></div>
+								<div class="novo displayNone"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis3">
+							<div class="picture">
+								<img src="images/etm_air.png" class="img-fluid" alt="etm_air">
+								<div class="sale1"><p>45%</p></div>
+								<div class="novo"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$49.99</h2><div class="saleprice"><p>$99.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div><div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+					<div class="opis opis1">
+						<div class="picture">
+							<img src="images/oleo_gel_nail.png" class="img-fluid" alt="oleo_gel_nail">
+							<div class="sale displayNone"><p>25%</p></div>
+							<div class="novo displayNone"><p>Novo</p></div>
+						</div>
+						<div class="opisprod">
+							<p>Dolce & Gabbana</p>
+							<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+							<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+							<div class="like"></div>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis2">
+							<div class="picture">
+								<img src="images/calvinklein.png" class="img-fluid" alt="calvinklein">
+								<div class="sale"><p>25%</p></div>
+								<div class="novo displayNone"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$159.99</h2><div class="saleprice"><p>$199.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 product">
+					<a href="">
+						<div class="opis opis3">
+							<div class="picture">
+								<img src="images/etm_air.png" class="img-fluid" alt="etm_air">
+								<div class="sale1"><p>45%</p></div>
+								<div class="novo"><p>Novo</p></div>
+							</div>
+							<div class="opisprod saleactive">
+								<p>Dolce & Gabbana</p>
+								<h3>Atomic Endurance Running<br>Tee (Crew-Neck)</h3>
+								<div class="row nopadding"><h2>$49.99</h2><div class="saleprice"><p>$99.99</p></div></div>
+								<div class="like"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pages">
+	<nav aria-label="Page">
+	  <ul class="pagination">
+	    <li class="page-item disabled btnDisabled">
+	      <a class="page-link arrowLeft" href="#" aria-label="Previous">
+	        <span aria-hidden="true"><img src="images/ic_chevron_left.svg"></span>
+	        <span class="sr-only">Previous</span>
+	      </a>
+	    </li>
+	    <li class="page-item pageNo active"><a class="page-link" href="#">1</a></li>
+	    <li class="page-item pageNo"><a class="page-link" href="#">2</a></li>
+	    <li class="page-item pageNo"><a class="page-link" href="#">3</a></li>
+	    <li class="page-item pageNo"><a class="page-link" href="#">...</a></li>
+	    <li class="page-item pageNo"><a class="page-link" href="#">7</a></li>
+	    <li class="page-item">
+	      <a class="page-link arrowRight" href="#" aria-label="Next">
+	        <span aria-hidden="true"><img src="images/ic_chevron_right.svg"></span>
+	        <span class="sr-only">Next</span>
+	      </a>
+	    </li>
+	  </ul>
+	</nav>
+</div>
+
+<footer>
+	<div class="row nopadding mainfooter">
+		<div class="col-3 foot1">
+			<ul>
+				<li><a class="" href="#"><img src="images/logo_white.svg" alt="logo"></a></li>
+				<li><a class="" href="#">Knez Mihajlova 15, Beograd</a></li>
+				<li><p>011/123-456-78</p></li>
+				<li><p>nekimail@gmail.com</p></li>
+			</ul>
+		</div>
+		<div class="col-3 foot2">
+			<ul>
+				<h4>Korisni linkovi</h4>
+				<li><a class="" href="#">Opšti uslovi</a></li>
+				<li><a class="" href="#">Politika privatnosti</a></li>
+				<li><a class="" href="#">Najčešća pitanja</a></li>
+				<li><a class="" href="#">Zamena robe</a></li>
+				<li><a class="" href="#">Povraćaj sredstava</a></li>
+			</ul>
+		</div>
+		<div class="col-3 foot3">
+			<ul>
+				<h4>O kompaniji</h4>
+				<li><a class="" href="#">O nama</a></li>
+				<li><a class="" href="#">Prodavnice</a></li>
+				<li><a class="" href="#">Zaposlenje</a></li>
+			</ul>
+		</div>
+		<div class="col-3 foot4">
+			<ul>
+				<h4>Pratite nas</h4>
+				<li><a class="fejs" href="#"><img src="images/ic_facebook.svg"></a></li>
+				<li><a class="insta" href="#"><img src="images/ic_instagram.svg"></a></li>
+				<li><a class="yt" href="#"><img src="images/ic_youtube.svg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lastrow">
+		<p>&copy; 2020 Sva prava su zadržana</p>
+	</div>
+	<a href="#"><div class="scrollUp"><div class="strelica"><img class="strelicaSlika" src="images/ic_chevron_up.svg"></div></div></a>
+</footer>
+
+<script>
+	var inputLeft = document.getElementById("input-left");
+	var inputRight = document.getElementById("input-right");
+
+	var thumbLeft = document.querySelector(".slider > .thumb.left");
+	var thumbRight = document.querySelector(".slider > .thumb.right");
+	var range = document.querySelector(".slider > .range");
+
+	function setLeftValue() {
+		var _this = inputLeft,
+			min = parseInt(_this.min),
+			max = parseInt(_this.max);
+
+		_this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
+
+		var percent = ((_this.value - min) / (max - min)) * 100;
+
+		thumbLeft.style.left = percent + "%";
+		range.style.left = percent + "%";
+	}
+	setLeftValue();
+
+	function setRightValue() {
+		var _this = inputRight,
+			min = parseInt(_this.min),
+			max = parseInt(_this.max);
+
+		_this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
+
+		var percent = ((_this.value - min) / (max - min)) * 100;
+
+		thumbRight.style.right = (100 - percent) + "%";
+		range.style.right = (100 - percent) + "%";
+	}
+	setRightValue();
+
+	inputLeft.addEventListener("input", setLeftValue);
+	inputRight.addEventListener("input", setRightValue);
+
+	inputLeft.addEventListener("mouseover", function() {
+		thumbLeft.classList.add("hover");
+	});
+	inputLeft.addEventListener("mouseout", function() {
+		thumbLeft.classList.remove("hover");
+	});
+	inputLeft.addEventListener("mousedown", function() {
+		thumbLeft.classList.add("active");
+	});
+	inputLeft.addEventListener("mouseup", function() {
+		thumbLeft.classList.remove("active");
+	});
+
+	inputRight.addEventListener("mouseover", function() {
+		thumbRight.classList.add("hover");
+	});
+	inputRight.addEventListener("mouseout", function() {
+		thumbRight.classList.remove("hover");
+	});
+	inputRight.addEventListener("mousedown", function() {
+		thumbRight.classList.add("active");
+	});
+	inputRight.addEventListener("mouseup", function() {
+		thumbRight.classList.remove("active");
+	});
+</script>
+<script>
+	function myFunction() {
+	  var x = document.getElementById("myScrollbar");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+</script>
+<script>
+	function myFunction() {
+	  var x = document.getElementById("priceRange");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+</script>
+<script>
+	function myFunction() {
+	  var x = document.getElementById("zapremina");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+</script>
+</body>
+</html>

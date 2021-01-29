@@ -544,6 +544,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .sortBy1 {
   display: none;
+  font-size: 16px;
 }
 .sortBy1 .sort {
   text-align: center;
@@ -723,6 +724,13 @@ footer .foot4 img:hover {
   bottom: 30px;
   left: 30px;
 }
+.maskText h1 {
+  font-size: 28px;
+  padding-bottom: 6px;
+}
+.maskText p {
+  font-size: 15px;
+}
 .filter h4 {
   font-size: 16px;
 }
@@ -730,7 +738,7 @@ footer .foot4 img:hover {
   text-align: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .navbar1 {
   width: 100%;
   padding: 0 !important;
@@ -844,9 +852,173 @@ footer h4 {
 }
 }
 @media (max-width: 576px) {
-
+.navbar1 .navbar-nav {
+  margin-right: 10px;
+}
+.navbar-brand {
+  margin-left: 10px;
+}
+.navbar-brand img {
+  height: 36px;
+  width: auto;
+}
+.navbar1 .nav-link1 {
+ padding: 7px 8px 7px 0;
+ font-size: 12px;
+}
+.navbar1 .nav-link2 {
+ color: #5C6673;
+ padding: 7px 6px 7px 6px;
+ font-size: 12px;
+}
+.navbar1 .nav-link3 {
+  padding: 7px 6px;
+}
+.navbar1 .nav-link3 img {
+  height: 16px;
+  width: auto;
+}
+.search {
+  display: none;
+}
+.navbar-custom .navbar-toggler {
+  margin: 5px 0;
+  padding: 2px 6px;
+}
+.navbar2 a {
+  font-size: 14px;
+  padding: 8px 48px 10px 12px !important;
+}
+.filter h4 {
+  font-size: 15px;
+}
+.filter p {
+  font-size: 13px;
+}
+.sortBy1 p {
+  font-size: 13px;
+}
+.pages {
+  width: 90%;
+  padding: 30px 0 50px 0; 
+}
+.arrowRight, .arrowLeft {
+  width: 30px;
+  height: 30px;
+}
+.arrowLeft {
+  position: relative;
+  margin-right: 16px;
+}
+.arrowRight {
+  position: relative;
+  margin-left: 0px;
+}
+.pageNo .page-link {
+  font-size: 12px;
+  border: none;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  padding: 4px;
+  margin: 2px 12px 4px 0;
+}
+.arrowLeft img {
+  width: 15px;
+  height: auto;
+}
+.arrowRight img {
+  width: 15px;
+  height: auto;
+}
+.opisprod .like {
+  width: 35px;
+  height: 21px;
+}
+.picture .novo {
+  width: 40px;
+  height: 40px;
+  font-size: 11px;
+}
+.picture .novo p {
+  padding-top: 12px;
+}
+.picture .sale1 {
+  width: 40px;
+  height: 40px;
+  font-size: 11px;
+  top: 56px;
+}
+.picture .sale1 p {
+  padding-top: 12px;
+}
+.picture .sale {
+  width: 40px;
+  height: 40px;
+  font-size: 11px;
+}
+.picture .sale p {
+  padding-top: 12px;
+}
+.backgroundPic {
+  padding-top: 20px;
+}
+.maskText {
+  bottom: 15px;
+  left: 15px;
+}
+.maskText h1 {
+  font-size: 28px;
+  padding-bottom: 0px;
+}
+.maskText p {
+  font-size: 14px;
+}
+.scrollUp {
+  width: 36px;
+  height: 36px;
 }
 
+footer p {
+  font-size: 12px;
+}
+.foot1 a, .foot2 a, .foot3 a, .foot4 a {
+  font-size: 12px;
+}
+.foot2 h4, .foot3 h4, .foot4 h4 {
+  font-size: 16px;
+}
+footer .foot1 img {
+width: 36px;
+height: auto;
+padding-bottom: 18px;
+}
+footer .foot4 img {
+  width: 20px;
+  height: 20px;
+}
+.lastrow {
+  font-size: 8px;
+}
+footer h4 {
+  padding-bottom: 10px !important;
+}
+.foot2, .foot3, .foot4 {
+  padding: 30px 0 0 0 !important;
+}
+}
+@media (max-width: 400px) {
+.maskText {
+  bottom: 10px;
+  left: 10px;
+}
+.maskText h1 {
+  font-size: 21px;
+  padding-bottom: 0px;
+}
+.maskText p {
+  font-size: 10px;
+}
+}
 
 /*---Firefox Bug Fix --*/
 .carousel-item {

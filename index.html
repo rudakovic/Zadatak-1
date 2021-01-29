@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Complete Bootstrap 4 Website Layout</title>
+	<title>Ženski parfemski setovi</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -96,7 +96,7 @@
 	<img src="images/Mask.png" alt="mask">
 	<div class="maskText">
 		<h1>Ženski parfemski setovi</h1>
-		<p>Pogledaj novu kolekciju ženskih parfemskih setova.<br>Svetski poznati brendovi, samo ko nas</p>
+		<p>Pogledaj novu kolekciju ženskih parfemskih setova.<br>Svetski poznati brendovi, samo kod nas</p>
 	</div>
 </div>
 
@@ -131,7 +131,7 @@
 					<div class="filtercena">
 						<div class="cenaNaslov">
 							<h4>Filtriraj po ceni</h4>
-							<div class="hideMenu" onclick="myFunction()"></div>
+							<div class="hideMenu" onclick="priceRange()"></div>
 						</div>
 						<div class="middle" id="priceRange">
 							<div class="multi-range-slider">
@@ -150,7 +150,7 @@
 					<div class="filterbrend">
 						<div class="brendNaslov">
 							<h4>Filteriraj po brendu</h4>
-							<div class="hideMenu" onclick="myFunction()"></div>
+							<div class="hideMenu" onclick="myScrollbar()"></div>
 						</div>
 						<div class="myScrollbar" id="myScrollbar">
 							<div class="checkbox-wrapper">
@@ -233,7 +233,7 @@
 					<div class="filterzapremina">
 						<div class="zapreminaNaslov">
 							<h4>Filteriraj po zapremini</h4>
-							<div class="hideMenu" onclick="myFunction()"></div>
+							<div class="hideMenu" onclick="zapremina()"></div>
 						</div>
 						<div id="zapremina">
 							<div class="checkbox-wrapper">
@@ -705,35 +705,9 @@
 
 	inputLeft.addEventListener("input", setLeftValue);
 	inputRight.addEventListener("input", setRightValue);
-
-	inputLeft.addEventListener("mouseover", function() {
-		thumbLeft.classList.add("hover");
-	});
-	inputLeft.addEventListener("mouseout", function() {
-		thumbLeft.classList.remove("hover");
-	});
-	inputLeft.addEventListener("mousedown", function() {
-		thumbLeft.classList.add("active");
-	});
-	inputLeft.addEventListener("mouseup", function() {
-		thumbLeft.classList.remove("active");
-	});
-
-	inputRight.addEventListener("mouseover", function() {
-		thumbRight.classList.add("hover");
-	});
-	inputRight.addEventListener("mouseout", function() {
-		thumbRight.classList.remove("hover");
-	});
-	inputRight.addEventListener("mousedown", function() {
-		thumbRight.classList.add("active");
-	});
-	inputRight.addEventListener("mouseup", function() {
-		thumbRight.classList.remove("active");
-	});
 </script>
 <script>
-	function myFunction() {
+	function myScrollbar() {
 	  var x = document.getElementById("myScrollbar");
 	  if (x.style.display === "none") {
 	    x.style.display = "block";
@@ -743,7 +717,7 @@
 	}
 </script>
 <script>
-	function myFunction() {
+	function priceRange() {
 	  var x = document.getElementById("priceRange");
 	  if (x.style.display === "none") {
 	    x.style.display = "block";
@@ -753,7 +727,7 @@
 	}
 </script>
 <script>
-	function myFunction() {
+	function zapremina() {
 	  var x = document.getElementById("zapremina");
 	  if (x.style.display === "none") {
 	    x.style.display = "block";
